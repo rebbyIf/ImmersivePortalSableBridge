@@ -1,0 +1,13 @@
+{
+  "itemGroup.rebbysinfinitestructures": "Example Mod Tab",
+  "block.rebbysinfinitestructures.example_block": "Example Block",
+  "item.rebbysinfinitestructures.example_item": "Example Item",
+
+  "rebbysinfinitestructures.configuration.title": "Rebby's Infinite Structures Configs",
+  "rebbysinfinitestructures.configuration.section.rebbysinfinitestructures.common.toml": "Rebby's Infinite Structures Configs",
+  "rebbysinfinitestructures.configuration.section.rebbysinfinitestructures.common.toml.title": "Rebby's Infinite Structures Configs",
+  "rebbysinfinitestructures.configuration.items": "Item List",
+  "rebbysinfinitestructures.configuration.logDirtBlock": "Log Dirt Block",
+  "rebbysinfinitestructures.configuration.magicNumberIntroduction": "Magic Number Text",
+  "rebbysinfinitestructures.configuration.magicNumber": "Magic Number"
+}

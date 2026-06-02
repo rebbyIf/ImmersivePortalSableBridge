@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "net.rebby.immersive_portal_sable_bridge.mixin",
+  "plugin": "net.rebby.immersive_portal_sable_bridge.mixin.BridgeMixinConfigPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "immersive_portals.McHelperMixin",
+    "immersive_portals.MixinSquaredEntity",
+    "immersive_portals.MixinSquaredTrackedEntity",
+    "sable.SublevelTrackingSystemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
