@@ -1,9 +1,6 @@
 package net.rebby.immersive_portal_sable_bridge.mixin;
 
 import com.bawnorton.mixinsquared.adjuster.MixinAnnotationAdjusterRegistrar;
-import net.rebby.immersive_portal_sable_bridge.ImmersivePortalSableBridge;
-import net.rebby.immersive_portal_sable_bridge.mixin.immersive_portals.ImmersivePortalsMixinAdjuster;
-import net.rebby.immersive_portal_sable_bridge.mixin.sable.SableEntityCollisionMixinAdjuster;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -18,9 +15,7 @@ import java.util.Set;
 public class BridgeMixinConfigPlugin implements IMixinConfigPlugin {
     @Override
     public void onLoad(String mixinPackage) {
-        ImmersivePortalSableBridge.LOGGER.info("Registering Mixin Config Plugins!");
-        MixinAnnotationAdjusterRegistrar.register(new SableEntityCollisionMixinAdjuster());
-        MixinAnnotationAdjusterRegistrar.register(new ImmersivePortalsMixinAdjuster());
+        MixinAnnotationAdjusterRegistrar.register(new ImmersivePortalsSableBridgeMixinAdjuster());
     }
 
     @Override
