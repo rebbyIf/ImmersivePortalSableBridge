@@ -22,7 +22,7 @@ import java.util.UUID;
 /**
  * @author Bunting_chj
  */
-@Mixin(value = SubLevelTrackingSystem.class, priority = 2000)
+@Mixin(value = SubLevelTrackingSystem.class, priority = 900)
 public class SublevelTrackingSystemMixin {
 
     @Shadow

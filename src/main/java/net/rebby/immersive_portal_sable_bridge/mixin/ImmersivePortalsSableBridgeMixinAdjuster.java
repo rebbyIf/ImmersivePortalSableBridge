@@ -17,34 +17,8 @@ public class ImmersivePortalsSableBridgeMixinAdjuster implements MixinAnnotation
             && annotationNode.is(Redirect.class)
             && handlerNode.name.contains("redirectHandleCollisions")
             ) {
-
             return null;
         }
-
-        if (mixinClassName.equals("qouteall.imm_ptl.core.mixin.common.entity_sync.MixinTrackedEntity")){
-            if (annotationNode.is(Redirect.class)
-                && annotationNode.as(AdjustableRedirectNode.class).getAt().getTarget().equals("Lnet/minecraft/server/network/ServerPlayerConnection;send(Lnet/minecraft/network/protocol/Packet;)V")) {
-
-                return null;
-            }
-
-            if (annotationNode.is(Overwrite.class)
-                && (handlerNode.name.contains("updatePlayer")
-                || handlerNode.name.contains("updatePlayers"))){
-
-                return null;
-            }
-
-        }
-
-//        if(mixinClassName.equals("dev.ryanhcode.sable.mixin.entity.entity_sublevel_collision.EntityMixin")) {
-//            if(annotationNode.is(Redirect.class)){
-//                AdjustableRedirectNode redirectNode = annotationNode.as(AdjustableRedirectNode.class);
-//                if(redirectNode.getAt().getTarget().equals("Lnet/minecraft/world/entity/Entity;collide(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;")){
-//                    return null;
-//                }
-//            }
-//        }
         if(mixinClassName.equals("dev.ryanhcode.sable.mixin.entity.entity_tracking.TrackedEntityMixin")) return null;
 
         return annotationNode;

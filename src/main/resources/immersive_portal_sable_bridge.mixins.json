@@ -7,7 +7,7 @@
     "immersive_portals.McHelperMixin",
     "immersive_portals.MixinChunkLoader",
     "immersive_portals.MixinSquaredEntity",
-    "immersive_portals.MixinSquaredTrackedEntity",
+    "immersive_portals.MixinSquaredEntity_2",
     "sable.SublevelTrackingSystemMixin"
   ],
   "injectors": {
