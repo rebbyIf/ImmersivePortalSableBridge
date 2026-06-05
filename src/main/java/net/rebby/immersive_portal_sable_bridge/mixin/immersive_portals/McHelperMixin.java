@@ -2,6 +2,7 @@ package net.rebby.immersive_portal_sable_bridge.mixin.immersive_portals;
 
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import dev.ryanhcode.sable.companion.SableCompanion;
 import net.minecraft.core.SectionPos;
 import net.minecraft.util.AbortableIterationConsumer;
 import net.minecraft.world.entity.Entity;
@@ -57,5 +58,14 @@ public class McHelperMixin {
             return AbortableIterationConsumer.Continuation.CONTINUE;
         });
         return result.get();
+    }
+
+    @WrapMethod(
+            method = "adjustVehicle"
+    )
+    private static void adjustCancelOnSublevel(Entity entity, Operation<Void> original){
+        Entity vehicle = entity.getVehicle();
+        if (vehicle != null && SableCompanion.INSTANCE.isInPlotGrid(vehicle)) return;
+        original.call(entity);
     }
 }
