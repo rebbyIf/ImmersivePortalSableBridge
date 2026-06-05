@@ -8,7 +8,6 @@
     "immersive_portals.MixinChunkLoader",
     "immersive_portals.MixinChunkTickets",
     "immersive_portals.MixinSquaredEntity",
-    "immersive_portals.MixinSquaredEntity_2",
     "sable.SublevelTrackingSystemMixin"
   ],
   "injectors": {
