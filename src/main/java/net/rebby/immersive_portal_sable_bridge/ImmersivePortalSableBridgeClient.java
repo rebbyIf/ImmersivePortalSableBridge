@@ -25,7 +25,5 @@ public class ImmersivePortalSableBridgeClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        ImmersivePortalSableBridge.LOGGER.info("HELLO FROM CLIENT SETUP");
-        ImmersivePortalSableBridge.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }
