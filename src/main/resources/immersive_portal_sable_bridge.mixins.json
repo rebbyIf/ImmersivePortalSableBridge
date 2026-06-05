@@ -21,6 +21,8 @@
     "requireAnnotations": true
   },
   "client": [
-    "immersive_portals.MixinImmPtlViewArea"
+    "immersive_portals.MixinImmPtlViewArea",
+    "sable.LevelRendererAccessor",
+    "sable.MixinVanillaSubLevelBlockEntityRenderer"
   ]
 }
