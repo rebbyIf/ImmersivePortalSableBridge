@@ -42,7 +42,7 @@ displayName="${mod_name}" #mandatory
 #credits="" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-authors="Rebby"
+authors="Bunting_chj, Rebby"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
